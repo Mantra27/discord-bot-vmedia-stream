@@ -8,7 +8,7 @@ const puppeteer = require('puppeteer');
         console.log(`Logged in as ${client.user.tag}!`)
       })
       
-    console.log('live now');
+    console.log('puppeteer started >>>>>');
   
     let url = 'https://discord.com/login';
   
@@ -41,11 +41,11 @@ const puppeteer = require('puppeteer');
             stream_page.keyboard.press("F");
         }
       
-        if(msg.content == '+sa')
-        {
-            console.log(msg.content)
-            stream_page.waitForSelector('#skip-button\:6 > span > button').click();
-        }
+//         if(msg.content == '+sa')
+//         {
+//             console.log(msg.content)
+//             stream_page.waitForSelector('#skip-button\:6 > span > button').click();
+//         }
       
       })
     
